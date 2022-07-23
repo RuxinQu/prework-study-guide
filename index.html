@@ -8,51 +8,77 @@
     <title>Prework Study Guide</title>
   </head>
   <body>
-    <header id="top">
-      <h1>Prework Study Guide</h1>
-      <img class="bowtie-cat" src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+    <header id="top" class="banner">
+        <h1>Prework Study Guide</h1>
+        <img class="bowtie-cat" src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+        <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
       <section class="card" id="html-section">
+      <div class="container">
         <h2>HTML</h2>
         <ul>
-          <li>The head element contains information about the webpage.</li>
-          <li>The body element represents the visible content shown to the user.</li>
+          <li>HTML stands for HyperText Markup Language.</li>
+          <li>&lt;html lang="en"&gt;&lt;/html&gt; tells that the file is written in English.</li>
+          <li>&lt;meta name="viewport" content="width=device-width, initial-scale=1"/&gt; can scale the HTML webpage to be responsive to different screen sizes.</li>
+          <li>Most elements need a open tag and close tag. <br>Note: img is a self-close element &lt;img src=""/&gt;</li>
+          <li>&lt;header&gt;&lt;nav&gt;&lt;session&gt;&lt;main&gt;&lt;footer&gt; and other semantic elements can make HTML file easy to read.</li>
         </ul>
+      </div>
       </section>
    
       <section class="card" id="css-section">
+      <div class="container">
         <h2>CSS</h2>
         <ul class="css">
-          <li>Use &lt;link rel="stylesheet" href="relative path"&gt; to link the CSS file and HTML file</li>
-          <li>CSS box model<img class="box-model" alt="box-model" title="CSS box model" src="./assets/box-model.png"/>  </li>
-          <li>Box-shadow(offset-x offset-y blur color) property can add rectangle shadow to the element</li>
-          <li>Filter: drop-shadow(offset-x offset-y blur color) property can add shadow to different shapes of element</li>
-          <li>When the width and height are the same for an image, img{border-radius: 50%;} can set the image to round</li>
-          <li>Flexbox can make it easier to allign flex items </li>
+          <li>CSS stands for Cascading Style Sheet.</li>
+          <li>Use &lt;link rel="stylesheet" href="file path"&gt; to link the CSS file and HTML file.</li>
+          <li>CSS box model:<img class="box-model" alt="box-model" title="CSS box model" src="./assets/box-model.png"/>  </li>
+          <li>Box-shadow(offset-x offset-y blur color) property can add rectangle shadow to an element.
+            <br>Filter: drop-shadow(offset-x offset-y blur color) property can add shadow to different shapes of element.</li>
+          <li>When the width and height are the same for an image, img{border-radius: 50%;} can set the image to round.</li>
+          <li>Flexbox can make it easier to allign flex items. </li>
         </ul>
-        
+      </div>  
       </section>
    
       <section class="card" id="git-section">
+      <div class="container">
         <h2>Git</h2>
         <ul>
-          <li>Create a repo on Github or fork other's repo</li>
-          <li><strong>Git clone the SSH link</strong> to local computer</li>
-          <li>Create a new branch using <strong>git checkout -b branchname</strong></li>
-          <li>Make changes on this branch, then <strong>git add</strong> it to the staging area then <strong>git commit -m " "</strong></li>
-          <li>Run <strong>git pull origin main</strong> to always make sure the branch is up to date </li>
-          <li><strong>Git push</strong> the branch to the remote</li>
-          <li>Create a pull request on Github</li>
-          <li>If the pull request is approved, it can be merged to main branch</li>
+          <li>Create a repo on Github or fork other's repo.</li>
+          <li><strong>Git clone the SSH link</strong> to local computer.</li>
+          <li>Create a new branch using <strong>git checkout -b branchname</strong>.</li>
+          <li>Make changes on this branch, then <strong>git add</strong> it to the staging area then <strong>git commit -m " "</strong>.</li>
+          <li>Run <strong>git pull origin main</strong> to always make sure the branch is up to date. </li>
+          <li><strong>Git push</strong> the branch to the remote.</li>
+          <li>Create a pull request on Github.</li>
+          <li>If the pull request is approved, it can be merged to the main branch.
+            <br> (Difference between Git and Github: Git is a <strong>version control system</strong> while Github is a <strong>hosting service</strong> allows people to do version control.)</li>
         </ul>
+      </div>
       </section>
    
       <section class="card" id="javascript-section">
-        <h2>Javascript</h2>
+      <div class="container">
+        <h2>JavaScript</h2>        
         <ul>
-          <li>Enter your Javascript notes here</li>
+          <li>Use &lt;script src='file path'&gt;&lt;/script&gt; to link the HTML file with JavaScript file.</li>
+          <li>Use <strong>var variable</strong> to create a variable. To declare a function, using <strong>function functionname()</strong>. <br>Note: JavaScript is <strong>case-sensitive</strong>.</li>
+          <li>Use = to assign a value and === to test if two values are equal.</li>
+          <li>Main types of data: string, number, Null, boolean, undefined and object.</li>
+          <li>The method <strong>console.log()</strong> can be used to debug. The result can be seen in Chrome DevTools.</li>
+          <li><strong>Array</strong> can contain a group of data of multiple types. <strong>Index</strong> is the location of an element in the array, starting from [0].</li>
+          <li>A <strong>for</strong> loop contains: starting point (var x = 0), condition (x < array.length), move on to the next one(x++).</li>
+          <li><strong>Falsy</strong> value: 0, empty string, Null(no value), undefined(declared variable lacks a value), NaN. </li>
+          <li>An example of a if statement: 
+            <img class="if-statement" alt="if-statement" src="./assets/if-statement-hoursOfSleep.png"/>
+          </li>
+          <li>An example of a for loop in a function:
+            <img class="for-loop" alt="for-loop" src="assets/for-loop-function.png"/>
+          </li>
         </ul>
+      </div>
       </section>
 
     </main>
@@ -60,5 +86,6 @@
     <footer>
       <p>I can code!</p>
     </footer>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
