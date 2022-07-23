@@ -2,34 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: serif;
 }
 
-header,
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%; /*only use 100% when no padding or margin*/
-    height: 120px;
-    background-color: #293480;
-    color: #FFD752;
+html{
+    line-height: 30px;
 }
 
-header{
-    flex-direction: column;
-}
 h1,
 h2{
     text-align: center;
-}
-
-.bowtie-cat{
-    display: block;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    margin: 0 auto;
-    filter: drop-shadow(2px 2px 2px #000000);
 }
 
 ul{
@@ -42,17 +24,68 @@ p{
     font-size: 30px;
 }
 
+/* header and footer*/
+header,
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /*only use 100% when no padding or margin*/
+    background-color: #2574A9;/*#3d5a80;*//*#191970;*/
+    color: #FFF;/*#FFD752;*/
+    
+}
+
+header{
+    height: 150px;
+    flex-direction: column;
+}
+
+footer{
+    height: 80px;
+    position: relative;
+    top: 150px;
+}
+.banner{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+img{
+    display: block;
+}
+.bowtie-cat{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 5px auto;
+    filter: drop-shadow(3px 3px 1px #000000);
+}
+
 /*four cards style */
 .card {
+    position: relative;
+    top: 150px;
     width: 80%;
-    margin: 40px auto;
+    margin: 30px auto;
     border: 5px solid #808080;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 5px 10px 5px #888888;
   }
 
+.container{
+    margin: 20px;
+}  
+
 .box-model{
     width: 300px;
-    vertical-align: middle;
-    
+}
+
+.if-statement{
+    width: 400px;
+}
+
+.for-loop{
+    width: 800px;
 }
